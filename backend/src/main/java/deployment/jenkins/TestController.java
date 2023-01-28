@@ -1,13 +1,18 @@
 package deployment.jenkins;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class TestController {
 
     @GetMapping("/")
-    public String test() {
-        return "test";
+    public String index(){
+        return "<h1>index</h1>";
     }
+    @GetMapping("/test")
+    public String test() {
+        return "<h1>test page</h1>";
+    }
+
 }
