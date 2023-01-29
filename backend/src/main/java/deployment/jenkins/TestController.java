@@ -25,4 +25,9 @@ public class TestController {
     public String deploy() {
         return "<h1>deploy completed!</h1>";
     }
+
+    @GetMapping("/feat")
+    public String feat() {
+        return "<h1>add feat branch</h1>";
+    }
 }
