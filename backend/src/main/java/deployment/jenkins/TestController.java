@@ -15,4 +15,8 @@ public class TestController {
         return "<h1>test page 2</h1>";
     }
 
+    @GetMapping("/test2")
+    public String test2() {
+        return "<h1>test2>/h1>";
+    }
 }
